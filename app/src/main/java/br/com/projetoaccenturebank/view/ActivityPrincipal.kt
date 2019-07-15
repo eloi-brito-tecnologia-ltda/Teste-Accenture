@@ -56,6 +56,7 @@ class ActivityPrincipal : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListe
 
         val lista = StatementList().retornar(this)
         if(lista.isNullOrEmpty()) {
+            refresh.isRefreshing = true
             TaskStatement(this).execute()
         } else {
             this.lista.clear()

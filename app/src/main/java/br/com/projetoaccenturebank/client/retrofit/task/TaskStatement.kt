@@ -26,8 +26,8 @@ constructor(context: Context) : AsyncTask<Void, Void, Boolean>() {
 
     override fun onPreExecute() {
         super.onPreExecute()
-        Loading.hide()
-        Loading.show(context, "Atualizando as informações, aguarde!!!")
+        //Loading.hide()
+        //Loading.show(context, "Atualizando as informações, aguarde!!!")
 
     }
 
@@ -61,17 +61,17 @@ constructor(context: Context) : AsyncTask<Void, Void, Boolean>() {
 
     override fun onPostExecute(result: Boolean?) {
         super.onPostExecute(result)
-        Loading.hide()
+        //Loading.hide()
         callback.onRetorno(result!!, mensagem)
     }
 
     override fun onCancelled() {
         super.onCancelled()
-        Loading.hide()
+        //Loading.hide()
     }
 
     override fun onCancelled(result: Boolean?) {
         super.onCancelled(result)
-        Loading.hide()
+        //Loading.hide()
     }
 }
