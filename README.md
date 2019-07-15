@@ -22,3 +22,4 @@ implementation 'com.android.support:recyclerview-v7:28.0.0'
 ## Clone
 git clone https://github.com/ebdjesus/Teste-Accenture.git
 
+## Candidatura por: Accenture
